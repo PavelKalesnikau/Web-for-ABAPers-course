@@ -1,0 +1,28 @@
+#demobox {
+    width: 100px;
+    background-color:red ;
+}
+#main_box{
+        width:400px;
+        height:400px;
+        background:white;
+        border: 2px solid black;
+}
+#red_box{
+    width: 200px;
+    height: 200px;
+    background:red;
+}
+#blue_box{
+    width: 200px;
+    height: 200px;
+    background:blue;    
+    margin-left: 200px;
+}
+#green_box{
+    width: 200px;
+    height: 200px;
+    background:green;    
+    margin-left: 100px;
+    margin-top: -300px;
+}
