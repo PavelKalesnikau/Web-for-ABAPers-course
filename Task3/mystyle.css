@@ -1,0 +1,46 @@
+#sidebar {
+    height: 600px;
+    width: 10%;     
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0;     
+    left: 0;
+    background: transparent;    
+    background-color: lightcyan;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  #sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: gray;
+    display: block;
+  }
+  .main {
+    margin-left: 10%; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  #header{
+      margin-left: 10%;
+      top: 0;
+      width: 90%;
+      height: 15%;
+      padding-left: 5%; 
+      padding-right: 5%; 
+      background-color: lightblue;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+  }
+  #footer{
+    margin-left: 10%;
+    top: 0;
+    width: 90%;
+    height: 15%; 
+    padding-left: 5%; 
+    padding-right: 5%;      
+    background-color: lightblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
