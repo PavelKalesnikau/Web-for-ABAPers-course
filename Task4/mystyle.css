@@ -1,0 +1,85 @@
+  #title{    
+    float: left;
+    width: 30%;
+    background-color: red;    
+  }
+  #description{    
+    float:left;
+    width: 70%;   
+    background-color: orange;
+  }
+   
+  #article{
+    overflow:auto;    
+    padding:15px;
+    margin-top:7px;
+    width: 100%;
+    background-color:green;    
+    text-align:center;
+  }  
+
+  #footer_left{
+    float: left;
+    background-color: burlywood;
+    width: 30%;
+  }
+  #footer_center{    
+    float: left;
+    background-color: blue;
+    width: 40%;
+  }
+  #footer_right{    
+    float: left;
+    background-color: purple;
+    width: 30%;
+  }
+  
+    /* For mobile phones: */
+  @media only screen and (max-width:768px) {
+  /* стили */
+    #article, #footer_right, #title {
+      width:100%;    
+    }
+    #description, #footer_center, #footer_left{
+      display: none;
+    }
+  }
+
+  /* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #wrapper{
+    display: grid;    
+  }
+  #description {
+    grid-row: 1; 
+    grid-column: 1; 
+    position: relative;
+    width:30%;  
+    float: none;
+  }
+  #footer_right{
+    grid-row: 1;     
+    grid-column: 2; 
+    width: 70%;
+    float: none;    
+  }
+  #title{
+    grid-row: 2;          
+    width: 100%;    
+  }
+  #article{
+    grid-row: 3;     
+    grid-column: 1; 
+    width: 40%;    
+  }  
+  #footer_center{
+    grid-row: 3;     
+    grid-column: 2; 
+    width: 60%;
+  }
+  #footer_left{    
+    display: none;
+  }
+}
+
+  
