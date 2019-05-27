@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+    <script tape="text/javascript">
+        function goToGoogle(){
+            alert('This page will be rederected to Google page');
+            window.location.href = "http://google.com";
+        }
+        function deleteContent(){
+            alert('The content of this page will be deleted!');
+            document.body.innerHTML = '';
+        }
+    </script>
+</head>
+<!-- used sources
+https://www.w3schools.com/html/html_responsive.asp
+ -->
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>This is a Bootstrap Page</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <p><input type=submit value="Google" style="width:100%" onclick="goToGoogle()"></p>
+            </div>
+            <div class="col-sm-6">
+                <p><input type=submit value="Clear" style="width:100%" onclick="deleteContent()"></p>
+            </div>
+        </div>
+    </div>
+    <form>
+
+
+    </form>
+</body>
+
+</html>

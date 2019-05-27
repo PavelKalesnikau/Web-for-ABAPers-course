@@ -1,3 +1,7 @@
+  *{
+    text-align: center;
+    height: 7em;
+  }
   #title{    
     float: left;
     width: 30%;
@@ -10,9 +14,7 @@
   }
    
   #article{
-    overflow:auto;    
-    padding:15px;
-    margin-top:7px;
+    float: left;    
     width: 100%;
     background-color:green;    
     text-align:center;
@@ -34,6 +36,11 @@
     width: 30%;
   }
   
+  #link1{
+    font-size: 25px;
+    color: white;
+
+  }
     /* For mobile phones: */
   @media only screen and (max-width:768px) {
   /* стили */
@@ -47,37 +54,31 @@
 
   /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #wrapper{
-    display: grid;    
+  #container{    
+    display: flex;        
+    flex-flow: row wrap;
   }
-  #description {
-    grid-row: 1; 
-    grid-column: 1; 
-    position: relative;
-    width:30%;  
-    float: none;
+  #description {           
+    width:30%;      
+    order: 1;        
   }
-  #footer_right{
-    grid-row: 1;     
-    grid-column: 2; 
+  #footer_right{        
+    order: 2;
     width: 70%;
-    float: none;    
   }
-  #title{
-    grid-row: 2;          
-    width: 100%;    
+  #title{            
+    order: 3;
+    width: 100%;   
   }
-  #article{
-    grid-row: 3;     
-    grid-column: 1; 
-    width: 40%;    
+  #article{      
+    order: 4;
+    width: 40%; 
   }  
-  #footer_center{
-    grid-row: 3;     
-    grid-column: 2; 
+  #footer_center{        
+    order: 5;
     width: 60%;
   }
-  #footer_left{    
+  #footer_left{        
     display: none;
   }
 }
