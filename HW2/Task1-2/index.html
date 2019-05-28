@@ -17,6 +17,7 @@
             document.body.innerHTML = '';
         }
     </script>
+    <script src="myscripts.js"></script>
 </head>
 <!-- used sources
 https://www.w3schools.com/html/html_responsive.asp
@@ -27,11 +28,14 @@ https://www.w3schools.com/html/html_responsive.asp
             <h1>This is a Bootstrap Page</h1>
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <p><input type=submit value="Google" style="width:100%" onclick="goToGoogle()"></p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <p><input type=submit value="Clear" style="width:100%" onclick="deleteContent()"></p>
+            </div>
+            <div class="col-sm-4">
+                <p><input type=submit value="Name" style="width:100%" onclick=convertName()></p>
             </div>
         </div>
     </div>
