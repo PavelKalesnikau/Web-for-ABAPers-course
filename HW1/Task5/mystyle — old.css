@@ -1,0 +1,25 @@
+table{
+    margin: 5px;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid gray;
+  }
+
+#desk-table {
+    display: block;
+    align-content: center;
+}
+#tablet-table {
+    display: none;
+    align-content: center;
+}
+
+@media only screen and (max-width: 1028px){
+    #desk-table {
+        display: none;
+    }
+    #tablet-table {
+        display: block;
+    }
+}

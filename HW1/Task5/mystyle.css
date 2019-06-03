@@ -1,25 +1,29 @@
-table{
-    margin: 5px;
-    border-collapse: collapse;
+img{
+    width: 100%;    
 }
-table, th, td {
+.my-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+ /* .my-flex-block{
     border: 1px solid gray;
-  }
-
-#desk-table {
-    display: block;
-    align-content: center;
-}
-#tablet-table {
-    display: none;
-    align-content: center;
-}
-
-@media only screen and (max-width: 1028px){
-    #desk-table {
-        display: none;
+ } */
+    @media (min-width:1px) and (max-width:1279px){
+    .col-xl-2{
+        width: 20%;
     }
-    #tablet-table {
-        display: block;
+}
+
+@media (min-width:1280px) and (max-width:1919px){
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-6{
+        width: 50%;
+    }
+}
+@media (min-width:1920px){
+     .col-xl-2{
+        width: 20%;
     }
 }
