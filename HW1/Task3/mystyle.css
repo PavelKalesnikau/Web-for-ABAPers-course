@@ -6,9 +6,9 @@
     top: 0;     
     left: 0;
     background: transparent;    
-    background-color: lightcyan;
+    background-color: rgba(100, 100, 170, 50%);
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 2%;    
+    padding-top: 20%;    
   }
   #sidebar a {
     padding: 6px 8px 6px 16px;
@@ -22,7 +22,7 @@
     padding: 0px 10px;
   }
   #header{
-      margin-left: 10%;
+      margin-left: 10%; /* Same as the width of the sidebar */
       top: 0;
       width: 80%;
       height: 15%;
@@ -33,7 +33,7 @@
       border-bottom-right-radius: 10px;
   }
   #footer{
-    margin-left: 10%;
+    margin-left: 10%; /* Same as the width of the sidebar */
     top: 0;
     width: 80%;
     height: 15%; 
