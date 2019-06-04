@@ -8,15 +8,14 @@
     background: transparent;    
     background-color: lightcyan;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 2%;    
   }
   #sidebar a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: gray;
-    display: block;
+    display: block;    
   }
   .main {
     margin-left: 10%; /* Same as the width of the sidebar */
@@ -25,7 +24,7 @@
   #header{
       margin-left: 10%;
       top: 0;
-      width: 90%;
+      width: 80%;
       height: 15%;
       padding-left: 5%; 
       padding-right: 5%; 
@@ -36,7 +35,7 @@
   #footer{
     margin-left: 10%;
     top: 0;
-    width: 90%;
+    width: 80%;
     height: 15%; 
     padding-left: 5%; 
     padding-right: 5%;      
