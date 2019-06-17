@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW3.1</title>
+
+  <!-- use JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- Link to my style file -->
+  <link rel='stylesheet' href='mystyle.css' />
+  <!-- Link to my script file -->
+  <script src="objects.js"></script>
+  <script type="text/javascript" src="myscript.js"></script>
+</head>
+
+<body>
+  <!-- Form for creation plant -->
+  <!-- <form name="plants"> -->
+  <!-- <form method="POST" action="http://195.50.2.67:2403/pk-plants">   -->
+  <form id="plant">
+    <div>
+      <label for="name">Name of plant</label>
+      <input name="name" id="name" value="Ель">
+    </div>
+    <div>
+      <label for="description">Description</label>
+      <input name="description" id="description" value="Ель обыкновенная">
+    </div>
+    <div>
+      <label for="plantType2">Хвойные</label>
+      <input type="radio" id="plantType2"
+       name="planttype" value="spruce" checked>             
+
+      <label for="plantType1">Папоротники</label>
+      <input type="radio" id="plantType1"
+       name="planttype" value="fern">      
+    </div>
+    <div>
+      <button type="button" onclick="sendData()">Add plant</button>
+      <button type="button" onclick="deleteData()">Delete</button>
+      <button type="button" onclick="deleteAllData()">Delete all</button>
+      <!-- <button type="submit">Click Me!</button> -->
+    </div>
+  </form>
+  <!-- Table of plants -->
+  <h1>Plants</h1>
+  <table id="plants">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Leaf type</th>
+      </tr>
+    </thead>
+    <tbody id="#tbodyid">
+      <!-- load users here -->
+    </tbody>
+  </table>
+</body>
+
+</html>
