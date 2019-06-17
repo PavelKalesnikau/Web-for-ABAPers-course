@@ -2,9 +2,9 @@
 
 function Plant(id, name, description, leaf_type, age){
     this.id = id;
-    this.name = name;               // Setter for name
-    this.description = description; // Setter for description
-    this.age = age;                 // Setter for age
+    this.name = name;              
+    this.description = description;
+    this.age = age;                
     this.leaf_type = leaf_type;
   };
 

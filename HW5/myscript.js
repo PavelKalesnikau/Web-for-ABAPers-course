@@ -93,29 +93,6 @@ function tableRefresh() {
 
     table.querySelector('tbody').innerHTML = "";    // clear table content    
 
-    // // call API using `fetch`
-    // fetch(SERVER_URL)
-    //     .then(res => res.json())
-    //     .then(res => {
-    //         // loop over all plants                       
-    //         res.map(plant => {
-    //             // create a `tr` element
-    //             const tr = document.createElement('tr');
-    //             // create ID `td`
-    //             const name = document.createElement('td');
-    //             name.textContent = plant.name;
-    //             // create Name `td`
-    //             const description = document.createElement('td');
-    //             description.textContent = `${plant.description}`;
-    //             // add tds to tr
-    //             tr.appendChild(name);
-    //             tr.appendChild(description);
-    //             // app tr to table
-    //             table.querySelector('tbody').appendChild(tr);
-    //         });
-    //     })
-    //     .catch(err => console.log('Error:', err));
-
     plants.forEach(function (plant, ind, arr) {
         // create a `tr` element
         const tr = document.createElement('tr');
