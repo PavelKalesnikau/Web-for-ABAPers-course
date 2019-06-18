@@ -22,14 +22,6 @@
   <!-- <form method="POST" action="http://195.50.2.67:2403/pk-plants">   -->
   <form id="plant">
     <div>
-      <label for="name">Название растения</label>
-      <input name="name" id="name">
-    </div>
-    <div>
-      <label for="description">Описание</label>
-      <input name="description" id="description">
-    </div>
-    <div>
       <label for="plantType2">Хвойные</label>
       <input type="radio" id="plantType2"
        name="planttype" value="spruce" checked onclick="OnRBClick()">             
@@ -38,6 +30,22 @@
       <input type="radio" id="plantType1"
        name="planttype" value="fern" onclick="OnRBClick()">      
     </div>
+    <div>
+      <label for="name">Название растения</label>
+      <input name="name" id="name">
+    </div>
+    <div>
+      <label for="description">Описание</label>
+      <textarea rows = "3" cols="60" name="description" id="description"></textarea>
+    </div>    
+    <div>
+      <label for="age">Возраст</label>
+      <input name="age" id="age">
+    </div>    
+    <div>
+      <label for="collection">Семейство</label>
+      <input name="collection" id="collection">
+    </div>    
     <div>
       <button type="button" onclick="sendData()">Добавить</button>
       <button type="button" onclick="deleteData()">Удалить</button>
@@ -53,6 +61,8 @@
         <th>Имя</th>
         <th>Описание</th>
         <th>Тип листа</th>
+        <th>Возраст</th>
+        <th>Семейство</th>
       </tr>
     </thead>
     <tbody id="#tbodyid">

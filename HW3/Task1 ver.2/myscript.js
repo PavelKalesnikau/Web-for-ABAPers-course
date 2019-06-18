@@ -116,7 +116,7 @@ function tableRefresh() {
     //     })
     //     .catch(err => console.log('Error:', err));
 
-    plants.forEach(function (plant, ind, arr) {
+    plants.forEach(function (plant, ind, arr) {        
         // create a `tr` element
         const tr = document.createElement('tr');
         // create ID `td`
@@ -127,11 +127,19 @@ function tableRefresh() {
         description.textContent = plant.description;
         // create Leaf type `td`
         const leaf_type = document.createElement('td');
-        leaf_type.textContent = plant.leaf_type;
+        leaf_type.textContent = plant.leaf_type;        
+        // create age type `td`
+        const age = document.createElement('td');
+        age.textContent = plant.age;        
+        // create Collection type `td`
+        const collection = document.createElement('td');
+        collection.textContent = plant.collection;        
         // add tds to tr
         tr.appendChild(name);
         tr.appendChild(description);
         tr.appendChild(leaf_type);
+        tr.appendChild(age);
+        tr.appendChild(collection);
         // app tr to table
         table.querySelector('tbody').appendChild(tr);
     });
@@ -170,9 +178,9 @@ function requestData() {
 
             json_parsed_string.map(plant => {
                 if (plant.planttype == 'spruce') {
-                    plants.push(new Spruce(plant.id, plant.name, plant.description));
+                    plants.push(new Spruce(plant.id, plant.name, plant.description, plant.age, plant.collection));
                 } else if (plant.planttype == 'fern') {
-                    plants.push(new Fern(plant.id, plant.name, plant.description));
+                    plants.push(new Fern(plant.id, plant.name, plant.description, plant.age, plant.collection));
                 } else {
                     console.log('Unknown type of plant ' + plant.planttype);
                 }
@@ -187,16 +195,10 @@ function requestData() {
 function OnRBClick(){
     var radioValue = $("input[name='planttype']:checked").val();
     if(radioValue == 'fern'){
-        // var form_values = $("#plant").serializeArray();
-        // form_values[0].value = 'Папоротник';
-        // form_values[1].value = 'Орляк обыкновенный';
-        document.getElementById('name').value='Папоротник';
-        document.getElementById('description').value='Орляк обыкновенный';
+        document.getElementById('name').value='Орляк обыкновенный';
+        document.getElementById('description').value='Многолетний травянистый папоротник.';
     }else if(radioValue == 'spruce'){
-        // var form_values = $("#plant").serializeArray();
-        // form_values[0].value = 'Ель';
-        // form_values[1].value = 'Ель обыкновенная';
-        document.getElementById('name').value='Ель';
-        document.getElementById('description').value='Ель обыкновенная';
+        document.getElementById('name').value='Ель обыкновенная';
+        document.getElementById('description').value='Растение используется в озеленении, а также в декоративном садоводстве.';        
     }
 }
