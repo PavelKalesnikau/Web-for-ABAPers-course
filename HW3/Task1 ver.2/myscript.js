@@ -128,18 +128,22 @@ function tableRefresh() {
         // create Leaf type `td`
         const leaf_type = document.createElement('td');
         leaf_type.textContent = plant.leaf_type;        
-        // create age type `td`
+        // create Age type `td`
         const age = document.createElement('td');
         age.textContent = plant.age;        
         // create Collection type `td`
         const collection = document.createElement('td');
         collection.textContent = plant.collection;        
+        // create Habitat type `td`
+        const habitat = document.createElement('td');
+        habitat.textContent = plant.habitat;        
         // add tds to tr
         tr.appendChild(name);
         tr.appendChild(description);
         tr.appendChild(leaf_type);
         tr.appendChild(age);
         tr.appendChild(collection);
+        tr.appendChild(habitat);
         // app tr to table
         table.querySelector('tbody').appendChild(tr);
     });
@@ -178,9 +182,9 @@ function requestData() {
 
             json_parsed_string.map(plant => {
                 if (plant.planttype == 'spruce') {
-                    plants.push(new Spruce(plant.id, plant.name, plant.description, plant.age, plant.collection));
+                    plants.push(new Spruce(plant.id, plant.name, plant.description, plant.age, plant.collection, plant.habitat));
                 } else if (plant.planttype == 'fern') {
-                    plants.push(new Fern(plant.id, plant.name, plant.description, plant.age, plant.collection));
+                    plants.push(new Fern(plant.id, plant.name, plant.description, plant.age, plant.collection, plant.habitat));
                 } else {
                     console.log('Unknown type of plant ' + plant.planttype);
                 }

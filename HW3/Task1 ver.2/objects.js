@@ -6,6 +6,7 @@ function Plant(obj){
     this.description = obj.description;
     this.age = obj.age;             
     this.collection = obj.collection;   
+    this.habitat = obj.habitat;
     this.leaf_type = obj.leaf_type; 
   };
 
@@ -30,8 +31,13 @@ function Plant(obj){
   }
 
   //Setter for collection
-  Plant.prototype.setClass = function(collection){
+  Plant.prototype.setCollection = function(collection){
     this.collection = collection;
+  }
+
+  //Setter for habitat
+  Plant.prototype.setHabitat = function(habitat){
+    this.habitat = habitat;
   }
 
   //Setter for leaf type
@@ -61,11 +67,16 @@ function Plant(obj){
   }
   
   //Getter for collection
-  Plant.prototype.getClass = function(){
+  Plant.prototype.getCollection = function(){
     return this.collection;
   }
 
-    //Getter for Leaf type
+//Getter for habitat
+Plant.prototype.getHabitat = function(){
+  return this.habitat;
+}
+
+  //Getter for Leaf type
   Plant.prototype.getLeaf_type = function(){
     return this.leaf_type;
   }
@@ -79,6 +90,7 @@ function Plant(obj){
       leaf_type:"Листовидный отросток",      
       age:arguments[3],
       collection: arguments[4],
+      habitat: arguments[5],
     }
   
     // Plant.apply(this, arguments);    
@@ -93,11 +105,12 @@ function Plant(obj){
     leaf_type:"Иголки",
     age:arguments[3],
     collection: arguments[4],
+    habitat: arguments[5],
   }
   
   Plant.call(this, oPlant);     // funcitonal iheritance    
   }
 
  // inheritance happens here 
-//  Fern.prototype = Object.create(Plant.prototype);    // prototype inheritance
-//  Spruce.prototype = Object.create(Plant.prototype);  // prototype inheritance
+  Fern.prototype = Object.create(Plant.prototype);    // prototype inheritance
+  Spruce.prototype = Object.create(Plant.prototype);  // prototype inheritance

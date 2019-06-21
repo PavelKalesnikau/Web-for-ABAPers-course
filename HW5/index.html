@@ -12,29 +12,45 @@
   <!-- Link to my style file -->
   <link rel='stylesheet' href='mystyle.css' />
   <!-- Link to my script file -->
-  <script src="objects.js"></script>
+  <script type="text/javascript" src="objects.js"></script>
   <script type="text/javascript" src="myscript.js"></script>
 </head>
 
 <body>
-  <!-- Form for creation plant -->
+<!-- 
+***********************************************
+  The html markup of body is built dynamically. 
+  Please, see the function buildHTMLMarkup. 
+***********************************************
+-->
+  <!-- Form for creation plant
   <form id="plant">
+    <div>
+      <label for="plantType2">Хвойные</label>
+      <input type="radio" id="plantType2" name="planttype" value="spruce" checked onclick="OnRBClick()">
+
+      <label for="plantType1">Папоротники</label>
+      <input type="radio" id="plantType1" name="planttype" value="fern" onclick="OnRBClick()">
+    </div>
     <div>
       <label for="name">Название растения</label>
       <input name="name" id="name">
     </div>
     <div>
       <label for="description">Описание</label>
-      <input name="description" id="description">
+      <textarea rows="3" cols="60" name="description" id="description"></textarea>
     </div>
     <div>
-      <label for="plantType2">Хвойные</label>
-      <input type="radio" id="plantType2"
-       name="planttype" value="spruce" checked onclick="OnRBClick()">             
-
-      <label for="plantType1">Папоротники</label>
-      <input type="radio" id="plantType1"
-       name="planttype" value="fern" onclick="OnRBClick()">      
+      <label for="age">Возраст</label>
+      <input name="age" id="age">
+    </div>
+    <div>
+      <label for="collection">Семейство</label>
+      <input name="collection" id="collection">
+    </div>
+    <div>
+      <label for="habitat">Среда обитания</label>
+      <input name="habitat" id="habitat">
     </div>
     <div>
       <button type="button" onclick="sendData()">Добавить</button>
@@ -42,7 +58,6 @@
       <button type="button" onclick="deleteAllData()">Удалить все</button>      
     </div>
   </form>
-  <!-- Table of plants -->
   <h1>Растения</h1>
   <table id="plants">
     <thead>
@@ -50,12 +65,15 @@
         <th>Имя</th>
         <th>Описание</th>
         <th>Тип листа</th>
-      </tr>
+        <th>Возраст</th>
+        <th>Семейство</th>
+        <th>Среда обитания</th>
+      </tr>      
     </thead>
     <tbody id="#tbodyid">
-      <!-- load plants here -->
+      
     </tbody>
-  </table>
+  </table> -->
 </body>
 
 </html>
