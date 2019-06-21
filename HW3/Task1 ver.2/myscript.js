@@ -92,30 +92,6 @@ function tableRefresh() {
     const table = document.querySelector('#plants');
 
     table.querySelector('tbody').innerHTML = "";    // clear table content    
-
-    // // call API using `fetch`
-    // fetch(SERVER_URL)
-    //     .then(res => res.json())
-    //     .then(res => {
-    //         // loop over all plants                       
-    //         res.map(plant => {
-    //             // create a `tr` element
-    //             const tr = document.createElement('tr');
-    //             // create ID `td`
-    //             const name = document.createElement('td');
-    //             name.textContent = plant.name;
-    //             // create Name `td`
-    //             const description = document.createElement('td');
-    //             description.textContent = `${plant.description}`;
-    //             // add tds to tr
-    //             tr.appendChild(name);
-    //             tr.appendChild(description);
-    //             // app tr to table
-    //             table.querySelector('tbody').appendChild(tr);
-    //         });
-    //     })
-    //     .catch(err => console.log('Error:', err));
-
     plants.forEach(function (plant, ind, arr) {        
         // create a `tr` element
         const tr = document.createElement('tr');
@@ -152,19 +128,7 @@ function tableRefresh() {
 function requestData() {
     plants = [];
     const SERVER_URL = 'http://195.50.2.67:2403/pk-plants';
-    // ************** using FETCH *************
-    // fetch(SERVER_URL)
-    //     .then(res => res.json())
-    //     .then(res => {
-    //         // loop over all plants                       
-    //         res.map(plant => {
-    //             plants.push(new Plant(plant.id, plant.name, plant.description));
-    //         });
-    //         window.dispatchEvent(tblUpdate);
-    //     })
-    //     .catch(err => console.log('Error:', err));
-
-
+   
     // ********** Using XHR *****************        
     let XHR = new XMLHttpRequest();
 
