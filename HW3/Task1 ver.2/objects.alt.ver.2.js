@@ -1,13 +1,13 @@
 "use strict";
 
-function Plant(id, name, description, age, collection, habitat){
-  this.id = id;
-  this.name = name;              
-  this.description = description;
-  this.age = age;             
-  this.collection = collection;   
-  this.habitat = habitat;
-  //let leaf_type; 
+function Plant(obj) {
+  this.id = obj.id;
+  this.name = obj.name;
+  this.description = obj.description;
+  this.age = obj.age;
+  this.collection = obj.collection;
+  this.habitat = obj.habitat;
+  this.leaf_type = obj.leaf_type;
 };
 
 //Setter for id
@@ -85,53 +85,37 @@ function Fern() {
   Fern.prototype.leaf_type = "Листовидный отросток";
 }
 
-//  function Fern( ){
+ function Fern( ){
 
-//     var oPlant={
-//       id:arguments[0],
-//       name:arguments[1],
-//       description:arguments[2],
-//       leaf_type:"Листовидный отросток",      
-//       age:arguments[3],
-//       collection: arguments[4],
-//       habitat: arguments[5],
-//     }
+    var oPlant={
+      id:arguments[0],
+      name:arguments[1],
+      description:arguments[2],
+      leaf_type:"Листовидный отросток",      
+      age:arguments[3],
+      collection: arguments[4],
+      habitat: arguments[5],
+    }
 
-//        Plant.call(this, oPlant);    
-//   } 
-function Spruce() {
-  Plant.apply(this, arguments);
-  Spruce.prototype.leaf_type = "Иголки";
-}
+       Plant.call(this, oPlant);    
+  } 
+ function Spruce( ){
+  var oPlant={
+    id:arguments[0],
+    name:arguments[1],
+    description:arguments[2],
+    leaf_type:"Иголки",
+    age:arguments[3],
+    collection: arguments[4],
+    habitat: arguments[5],
+  }
 
-//  function Spruce( ){
-//   var oPlant={
-//     id:arguments[0],
-//     name:arguments[1],
-//     description:arguments[2],
-//     leaf_type:"Иголки",
-//     age:arguments[3],
-//     collection: arguments[4],
-//     habitat: arguments[5],
-//   }
+  Plant.call(this, oPlant);        
+  }
 
-//   Plant.call(this, oPlant);        
-//   }
-
-//  // inheritance happens here 
+ // inheritance happens here 
   Fern.prototype = Object.create(Plant.prototype);    // prototype inheritance
-  //Fern.prototype.constructor = Fern; 
+  Fern.prototype.constructor = Fern; 
 
   Spruce.prototype = Object.create(Plant.prototype);  // prototype inheritance
-//  Spruce.prototype.constructor = Spruce; 
-
-// extend(Fern, Plant);
-// extend(Spruce, Plant);
-
-// function extend(Child, Parent) {
-//   var F = function () { }
-//   F.prototype = Parent.prototype
-//   Child.prototype = new F()
-//   Child.prototype.constructor = Child
-//   Child.superclass = Parent.prototype
-// }
+  Spruce.prototype.constructor = Spruce; 

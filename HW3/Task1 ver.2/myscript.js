@@ -34,7 +34,7 @@ function sendData() {
 function deleteData() {
 
     // use JQuery
-    let name = $("#plant").serializeArray()[0].value; // get value of name from form 
+    let name = $("#plant").serializeArray()[1].value; // get value of name from form 
     let plant;
     for (var i = 0; i < plants.length; i++) {
         plant = plants[i];
