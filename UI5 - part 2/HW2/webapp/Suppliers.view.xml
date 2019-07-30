@@ -1,0 +1,48 @@
+<mvc:View 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+    <Table>
+        <columns>
+            <Column>
+                <Text text="Supplier ID" />
+            </Column>
+            <Column>
+                <Text text="Company Name" />
+            </Column>
+            <Column>
+                <Text text="Contact Name" />
+            </Column>
+            <Column>
+                <Text text="Address" />
+            </Column>
+            <Column>
+                <Text text="City" />
+            </Column>
+             <Column>
+                <Text text="Phone" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem >
+                <cells>
+                    <Text text="1" />
+                    <Text text="Exotic Liquids" />
+                    <Text text="Charlotte Cooper" />
+                    <Text text="Purchasing Manager" />
+                    <Text text="London" />
+                    <Text text="(171) 555-2222" />                    
+                </cells>
+            </ColumnListItem>
+            <ColumnListItem >
+                <cells>
+                    <Text text="2" />
+                    <Text text="New Orleans Cajun Delights" />
+                    <Text text="Shelley Burke" />
+                    <Text text="Order Administrator" />
+                    <Text text="New Orleans" />
+                    <Text text="(100) 555-4822" />                    
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>

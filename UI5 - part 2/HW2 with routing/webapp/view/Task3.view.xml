@@ -3,13 +3,18 @@
     xmlns:mvc="sap.ui.core.mvc" 
     xmlns="sap.m" 
     xmlns:ux3="sap.ui.ux3" id="shell">
-    <ux3:Shell id="idShellView" appTitle="HW2.Task3" worksetItemSelected="onNavigate" showTools="true">
+    <ux3:Shell id="idShellView" appTitle="{i18n>viewTask3Title}" worksetItemSelected="onNavigate" showTools="true">
         <ux3:headerItems>
-            <Button id="bnBack3" class="nav_back" icon="sap-icon://navigation-left-arrow" text="Back" type="Emphasized" press="onNavBack"/>
+            <Button id="bnBack3" 
+                    class="nav_back" 
+                    icon="sap-icon://navigation-left-arrow" 
+                    text="{i18n>btnBackText}" 
+                    type="Emphasized" 
+                    press="onNavBack"/>
         </ux3:headerItems>
         <ux3:worksetItems>
-            <ux3:NavigationItem text="Customers" key="key1" />
-            <ux3:NavigationItem text="Suppliers" key="key2" />
+            <ux3:NavigationItem text="{i18n>subView1}" key="key1" />
+            <ux3:NavigationItem text="{i18n>subView2}" key="key2" />
         </ux3:worksetItems>
         <ux3:content>
             <mvc:XMLView viewName="UI5_course.view.Customers" />

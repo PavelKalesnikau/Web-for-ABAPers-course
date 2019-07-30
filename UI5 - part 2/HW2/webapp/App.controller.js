@@ -48,6 +48,18 @@ sap.ui.define([
 			// if (oEvent.getParameter("class").includes("nav_back")){
 			// 	this.byId("App").to(this.byId("pgOverview"));
 			// }
+		},
+		onNavigate: function (evt) {
+		  switch (evt.getParameter("key")) {
+			case "key1":
+			  this.getView().byId("idShellView").setContent(sap.ui.xmlview("UI5_course.Customers"));
+			  break;
+			case "key2":
+			  this.getView().byId("idShellView").setContent(sap.ui.xmlview("UI5_course.Suppliers"));
+			  break;
+			default:
+			  this.getView().byId("idShellView").setContent(sap.ui.xmlview("UI5_course.Customers"));
+		  }
 		}
 	});
 	function sendFormData(oModel) {

@@ -2,27 +2,52 @@
     xmlns:mvc="sap.ui.core.mvc" 
     xmlns="sap.m"     
     xmlns:c="sap.ui.core">
-    <Table  items="{ path:'Customers>/Customers'}">
+    <Table  items="{bd>/Customers}">
         <columns>
-            <Column width="11rem">
-                <Label text="First Name" />
+            <Column >
+                <Label text="{i18n>CustomerID}" />
             </Column>
-            <Column width="11rem">
-                <Label text="Last Name" />
+            <Column >
+                <Label text="{i18n>CompanyName}" />
             </Column>
-            <Column width="7rem" hAlign="End">
-                <Label text="Age" />
+            <Column >
+                <Label text="{i18n>ContactName}" />
             </Column>
-            <Column width="7rem">
-                <Label text="Phone" />
+            <Column>
+                <Label text="{i18n>ContactTitle}" />
+            </Column>
+            <Column>
+                <Label text="{i18n>Address}" />
+            </Column>
+            <Column>
+                <Label text="{i18n>City}" />
+            </Column>
+            <Column>
+                <Label text="{i18n>PostalCode}" />
+            </Column>
+            <Column>
+                <Label text="{i18n>Country}" />
+            </Column>
+            <Column>
+                <Label text="{i18n>Phone}" />
+            </Column>
+            <Column>
+                <Label text="{i18n>Fax}" />
             </Column>
         </columns>
         <items>
          <ColumnListItem>
              <cells>
-                 <Text id="tFirstName" text="{firstName}" />
-                 <Text id="tLastName" text="{lastName}" />
-                 <Text id="tAge" text="{age}" />                        
+                 <Text text="{bd>CustomerID}" />
+                 <Text text="{bd>CompanyName}" />
+                 <Text text="{bd>ContactName}" />                        
+                 <Text text="{bd>ContactTitle}" />                        
+                 <Text text="{bd>Address}" />                        
+                 <Text text="{bd>City}" />                        
+                 <Text text="{bd>PostalCode}" />                        
+                 <Text text="{bd>Country}" />                        
+                 <Text text="{bd>Phone}" />                        
+                 <Text text="{bd>Fax}" />                        
              </cells>
          </ColumnListItem>
      </items>

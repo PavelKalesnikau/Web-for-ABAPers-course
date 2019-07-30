@@ -91,37 +91,18 @@
 				</content>
 			</Page>
 			<Page id="pgTask3" title="SAPUI5 - HW2 - Task3: Table (w/o navbar)">
-				<content>
-					<Toolbar>
-						<ToolbarSpacer/>
+				<ux3:Shell id="idShellView" appTitle="HW2.Task3" worksetItemSelected="onNavigate" showTools="true">
+					<ux3:headerItems>
 						<Button id="bnBack3" class="nav_back" icon="sap-icon://navigation-left-arrow" text="Back" type="Emphasized" press="onNavTo"/>
-						<ToolbarSpacer/>
-					</Toolbar>	
-					  <Table id="IDTable" items="{
-                            path:'mainData>/Orders'
-                        }">
-                        <columns>
-                            <Column>
-                                <Text text="Col1" />
-                            </Column>
-                            <Column>
-                                <Text text="Col2" />
-                            </Column>
-                            <Column>
-                                <Text text="Col3" />
-                            </Column>
-                        </columns>
-                        <items>
-                            <ColumnListItem type="Navigation" press="navToMoreInfo">
-                                <cells>
-                                    <Text text="test" />
-                                    <Text text="test" />
-                                    <Text text="test" />
-                                </cells>
-                            </ColumnListItem>
-                        </items>
-                    </Table>				
-				</content>
+					</ux3:headerItems>
+					<ux3:worksetItems>
+						<ux3:NavigationItem text="Customers" key="key1" />
+						<ux3:NavigationItem text="Suppliers" key="key2" />
+					</ux3:worksetItems>
+					<ux3:content>
+						<mvc:XMLView viewName="UI5_course.Customers" />
+					</ux3:content>
+				</ux3:Shell>
 			</Page>
 		</pages>
 	</App>

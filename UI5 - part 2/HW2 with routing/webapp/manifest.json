@@ -49,12 +49,16 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
                     "bundleName": "UI5_course.i18n.i18n"
-                },
-            "dbs": {
-                    "preload": "true",
-                    "dataSource": "northwind"
                 }
-            }
+            },
+            "bd": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/customers.json"
+            },            
+            "dbs": {
+                "preload": "true",
+                "dataSource": "northwind"
+            }        
         },
         "resources": {},
         "routing": {

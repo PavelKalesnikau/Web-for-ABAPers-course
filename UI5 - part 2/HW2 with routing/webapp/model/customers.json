@@ -1,46 +1,305 @@
 {
     "Customers": [
         {
-            "firstName": "John",
-            "lastName": "Smith",
-            "age": 25,
-            "address": {
-                "streetAddress": "21 2nd Street",
-                "city": "New York",
-                "state": "NY",
-                "postalCode": "10021"
-            },
-            "phoneNumber": [
-                {
-                    "type": "home",
-                    "number": "212 555-1234"
-                },
-                {
-                    "type": "fax",
-                    "number": "646 555-4567"
-                }
-            ]
+            "CustomerID": "ALFKI",
+            "CompanyName": "Alfreds Futterkiste",
+            "ContactName": "Maria Anders",
+            "ContactTitle": "Sales Representative",
+            "Address": "Obere Str. 57",
+            "City": "Berlin",
+            "Region": null,
+            "PostalCode": "12209",
+            "Country": "Germany",
+            "Phone": "030-0074321",
+            "Fax": "030-0076545"
         },
         {
-            "firstName": "Lory",
-            "lastName": "Bard",
-            "age": 35,
-            "address": {
-                "streetAddress": "13 3nd Street",
-                "city": "New York",
-                "state": "NY",
-                "postalCode": "10031"
-            },
-            "phoneNumber": [
-                {
-                    "type": "home",
-                    "number": "211 777-1234"
-                },
-                {
-                    "type": "fax",
-                    "number": "646 523-4345"
-                }
-            ]
+            "CustomerID": "ANATR",
+            "CompanyName": "Ana Trujillo Emparedados y helados",
+            "ContactName": "Ana Trujillo",
+            "ContactTitle": "Owner",
+            "Address": "Avda. de la Constituci\u00f3n 2222",
+            "City": "M\u00e9xico D.F.",
+            "Region": null,
+            "PostalCode": "05021",
+            "Country": "Mexico",
+            "Phone": "(5) 555-4729",
+            "Fax": "(5) 555-3745"
+        },
+        {
+            "CustomerID": "ANTON",
+            "CompanyName": "Antonio Moreno Taquer\u00eda",
+            "ContactName": "Antonio Moreno",
+            "ContactTitle": "Owner",
+            "Address": "Mataderos  2312",
+            "City": "M\u00e9xico D.F.",
+            "Region": null,
+            "PostalCode": "05023",
+            "Country": "Mexico",
+            "Phone": "(5) 555-3932",
+            "Fax": null
+        },
+        {
+            "CustomerID": "AROUT",
+            "CompanyName": "Around the Horn",
+            "ContactName": "Thomas Hardy",
+            "ContactTitle": "Sales Representative",
+            "Address": "120 Hanover Sq.",
+            "City": "London",
+            "Region": null,
+            "PostalCode": "WA1 1DP",
+            "Country": "UK",
+            "Phone": "(171) 555-7788",
+            "Fax": "(171) 555-6750"
+        },
+        {
+            "CustomerID": "BERGS",
+            "CompanyName": "Berglunds snabbk\u00f6p",
+            "ContactName": "Christina Berglund",
+            "ContactTitle": "Order Administrator",
+            "Address": "Berguvsv\u00e4gen  8",
+            "City": "Lule\u00e5",
+            "Region": null,
+            "PostalCode": "S-958 22",
+            "Country": "Sweden",
+            "Phone": "0921-12 34 65",
+            "Fax": "0921-12 34 67"
+        },
+        {
+            "CustomerID": "BLAUS",
+            "CompanyName": "Blauer See Delikatessen",
+            "ContactName": "Hanna Moos",
+            "ContactTitle": "Sales Representative",
+            "Address": "Forsterstr. 57",
+            "City": "Mannheim",
+            "Region": null,
+            "PostalCode": "68306",
+            "Country": "Germany",
+            "Phone": "0621-08460",
+            "Fax": "0621-08924"
+        },
+        {
+            "CustomerID": "BLONP",
+            "CompanyName": "Blondesddsl p\u00e8re et fils",
+            "ContactName": "Fr\u00e9d\u00e9rique Citeaux",
+            "ContactTitle": "Marketing Manager",
+            "Address": "24, place Kl\u00e9ber",
+            "City": "Strasbourg",
+            "Region": null,
+            "PostalCode": "67000",
+            "Country": "France",
+            "Phone": "88.60.15.31",
+            "Fax": "88.60.15.32"
+        },
+        {
+            "CustomerID": "BOLID",
+            "CompanyName": "B\u00f3lido Comidas preparadas",
+            "ContactName": "Mart\u00edn Sommer",
+            "ContactTitle": "Owner",
+            "Address": "C/ Araquil, 67",
+            "City": "Madrid",
+            "Region": null,
+            "PostalCode": "28023",
+            "Country": "Spain",
+            "Phone": "(91) 555 22 82",
+            "Fax": "(91) 555 91 99"
+        },
+        {
+            "CustomerID": "BONAP",
+            "CompanyName": "Bon app'",
+            "ContactName": "Laurence Lebihan",
+            "ContactTitle": "Owner",
+            "Address": "12, rue des Bouchers",
+            "City": "Marseille",
+            "Region": null,
+            "PostalCode": "13008",
+            "Country": "France",
+            "Phone": "91.24.45.40",
+            "Fax": "91.24.45.41"
+        },
+        {
+            "CustomerID": "COMMI",
+            "CompanyName": "Com\u00e9rcio Mineiro",
+            "ContactName": "Pedro Afonso",
+            "ContactTitle": "Sales Associate",
+            "Address": "Av. dos Lus\u00edadas, 23",
+            "City": "Sao Paulo",
+            "Region": "SP",
+            "PostalCode": "05432-043",
+            "Country": "Brazil",
+            "Phone": "(11) 555-7647",
+            "Fax": null
+        },
+        {
+            "CustomerID": "DUMON",
+            "CompanyName": "Du monde entier",
+            "ContactName": "Janine Labrune",
+            "ContactTitle": "Owner",
+            "Address": "67, rue des Cinquante Otages",
+            "City": "Nantes",
+            "Region": null,
+            "PostalCode": "44000",
+            "Country": "France",
+            "Phone": "40.67.88.88",
+            "Fax": "40.67.89.89"
+        }
+    ],
+    "Suppliers": [
+        {
+            "SupplierID": 1,
+            "CompanyName": "Exotic Liquids",
+            "ContactName": "Charlotte Cooper",
+            "ContactTitle": "Purchasing Manager",
+            "Address": "49 Gilbert St.",
+            "City": "London",
+            "Region": null,
+            "PostalCode": "EC1 4SD",
+            "Country": "UK",
+            "Phone": "(171) 555-2222",
+            "Fax": null
+        },
+        {
+            "SupplierID": 2,
+            "CompanyName": "New Orleans Cajun Delights",
+            "ContactName": "Shelley Burke",
+            "ContactTitle": "Order Administrator",
+            "Address": "P.O. Box 78934",
+            "City": "New Orleans",
+            "Region": "LA",
+            "PostalCode": "70117",
+            "Country": "USA",
+            "Phone": "(100) 555-4822",
+            "Fax": null
+        },
+        {
+            "SupplierID": 3,
+            "CompanyName": "Grandma Kelly's Homestead",
+            "ContactName": "Regina Murphy",
+            "ContactTitle": "Sales Representative",
+            "Address": "707 Oxford Rd.",
+            "City": "Ann Arbor",
+            "Region": "MI",
+            "PostalCode": "48104",
+            "Country": "USA",
+            "Phone": "(313) 555-5735",
+            "Fax": "(313) 555-3349"
+        },
+        {
+            "SupplierID": 4,
+            "CompanyName": "Tokyo Traders",
+            "ContactName": "Yoshi Nagase",
+            "ContactTitle": "Marketing Manager",
+            "Address": "9-8 Sekimai Musashino-shi",
+            "City": "Tokyo",
+            "Region": null,
+            "PostalCode": "100",
+            "Country": "Japan",
+            "Phone": "(03) 3555-5011",
+            "Fax": null
+        },
+        {
+            "SupplierID": 5,
+            "CompanyName": "Cooperativa de Quesos 'Las Cabras'",
+            "ContactName": "Antonio del Valle Saavedra",
+            "ContactTitle": "Export Administrator",
+            "Address": "Calle del Rosal 4",
+            "City": "Oviedo",
+            "Region": "Asturias",
+            "PostalCode": "33007",
+            "Country": "Spain",
+            "Phone": "(98) 598 76 54",
+            "Fax": null
+        },
+        {
+            "SupplierID": 6,
+            "CompanyName": "Mayumi's",
+            "ContactName": "Mayumi Ohno",
+            "ContactTitle": "Marketing Representative",
+            "Address": "92 Setsuko Chuo-ku",
+            "City": "Osaka",
+            "Region": null,
+            "PostalCode": "545",
+            "Country": "Japan",
+            "Phone": "(06) 431-7877",
+            "Fax": null
+        },
+        {
+            "SupplierID": 7,
+            "CompanyName": "Pavlova, Ltd.",
+            "ContactName": "Ian Devling",
+            "ContactTitle": "Marketing Manager",
+            "Address": "74 Rose St. Moonie Ponds",
+            "City": "Melbourne",
+            "Region": "Victoria",
+            "PostalCode": "3058",
+            "Country": "Australia",
+            "Phone": "(03) 444-2343",
+            "Fax": "(03) 444-6588"
+        },
+        {
+            "SupplierID": 8,
+            "CompanyName": "Specialty Biscuits, Ltd.",
+            "ContactName": "Peter Wilson",
+            "ContactTitle": "Sales Representative",
+            "Address": "29 King's Way",
+            "City": "Manchester",
+            "Region": null,
+            "PostalCode": "M14 GSD",
+            "Country": "UK",
+            "Phone": "(161) 555-4448",
+            "Fax": null
+        },
+        {
+            "SupplierID": 9,
+            "CompanyName": "PB Kn\u00e4ckebr\u00f6d AB",
+            "ContactName": "Lars Peterson",
+            "ContactTitle": "Sales Agent",
+            "Address": "Kaloadagatan 13",
+            "City": "G\u00f6teborg",
+            "Region": null,
+            "PostalCode": "S-345 67",
+            "Country": "Sweden",
+            "Phone": "031-987 65 43",
+            "Fax": "031-987 65 91"
+        },
+        {
+            "SupplierID": 10,
+            "CompanyName": "Refrescos Americanas LTDA",
+            "ContactName": "Carlos Diaz",
+            "ContactTitle": "Marketing Manager",
+            "Address": "Av. das Americanas 12.890",
+            "City": "Sao Paulo",
+            "Region": null,
+            "PostalCode": "5442",
+            "Country": "Brazil",
+            "Phone": "(11) 555 4640",
+            "Fax": null
+        },
+        {
+            "SupplierID": 11,
+            "CompanyName": "Heli S\u00fc\u00dfwaren GmbH & Co. KG",
+            "ContactName": "Petra Winkler",
+            "ContactTitle": "Sales Manager",
+            "Address": "Tiergartenstra\u00dfe 5",
+            "City": "Berlin",
+            "Region": null,
+            "PostalCode": "10785",
+            "Country": "Germany",
+            "Phone": "(010) 9984510",
+            "Fax": null
+        },
+        {
+            "SupplierID": 12,
+            "CompanyName": "Plutzer Lebensmittelgro\u00dfm\u00e4rkte AG",
+            "ContactName": "Martin Bein",
+            "ContactTitle": "International Marketing Mgr.",
+            "Address": "Bogenallee 51",
+            "City": "Frankfurt",
+            "Region": null,
+            "PostalCode": "60439",
+            "Country": "Germany",
+            "Phone": "(069) 992755",
+            "Fax": null
         }
     ]
 }

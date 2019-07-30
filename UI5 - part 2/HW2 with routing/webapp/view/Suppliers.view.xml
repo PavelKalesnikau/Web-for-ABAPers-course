@@ -1,44 +1,55 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+<mvc:View 
+    xmlns:mvc="sap.ui.core.mvc" 
     xmlns="sap.m">
-    <Table id="IDTable" items="{
-                            path:'/Customers'
-                        }">
+    <Table items="{bd>/Suppliers}">
         <columns>
             <Column>
-                <Text text="CustomerID" />
+                <Text text="{i18n>SupplierID}" />
             </Column>
             <Column>
-                <Text text="CompanyName" />
+                <Text text="{i18n>CompanyName}" />
             </Column>
             <Column>
-                <Text text="ContactTitle" />
+                <Text text="{i18n>ContactName}" />
             </Column>
             <Column>
-                <Text text="Address" />
+                <Text text="{i18n>Address}" />
             </Column>
             <Column>
-                <Text text="City" />
+                <Text text="{i18n>City}" />
             </Column>
             <Column>
-                <Text text="Country" />
+                <Text text="{i18n>Region}" />
             </Column>
              <Column>
-                <Text text="Phone" />
+                <Text text="{i18n>PostalCode}" />
+            </Column>
+             <Column>
+                <Text text="{i18n>Country}" />
+            </Column>
+             <Column>
+                <Text text="{i18n>Phone}" />
+            </Column>
+            <Column>
+                <Text text="{i18n>Fax}" />
             </Column>
         </columns>
         <items>
-            <ColumnListItem type="Navigation" press="navToMoreInfo">
+            <ColumnListItem >
                 <cells>
-                    <Text text="{CustomerID}" />
-                    <Text text="{CompanyName}" />
-                    <Text text="{ContactTitle}" />
-                    <Text text="{Address}" />
-                    <Text text="{City}" />
-                    <Text text="{Country}" />
-                    <Text text="{Phone}" />                    
+                    <Text text="{bd>SupplierID}" />
+                    <Text text="{bd>CompanyName}" />
+                    <Text text="{bd>ContactName}" />
+                    <Text text="{bd>ContactTitle}" />
+                    <Text text="{bd>Address}" />
+                    <Text text="{bd>City}" />                    
+                    <Text text="{bd>Region}" />                    
+                    <Text text="{bd>PostalCode}" />                    
+                    <Text text="{bd>Country}" />                    
+                    <Text text="{bd>Phone}" />                    
+                    <Text text="{bd>Fax}" />                    
                 </cells>
             </ColumnListItem>
         </items>
     </Table>
-
 </mvc:View>

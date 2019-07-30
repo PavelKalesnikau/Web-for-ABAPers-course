@@ -1,0 +1,38 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m" 
+    xmlns:c="sap.ui.core">
+    <Table >
+        <columns>
+            <Column width="11rem">
+                <Label text="First Name" />
+            </Column>
+            <Column width="11rem">
+                <Label text="Last Name" />
+            </Column>
+            <Column width="2rem" hAlign="End">
+                <Label text="Age" />
+            </Column>
+            <Column width="14rem">
+                <Label text="Phone" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="John" />
+                    <Text text="Smith" />
+                    <Text text="25" />
+                    <Text text="(333)234-23-44" />
+                </cells>
+            </ColumnListItem>
+            <ColumnListItem>
+                <cells>
+                    <Text text="James" />
+                    <Text text="Bond" />
+                    <Text text="35" />
+                    <Text text="(000)000-00-07" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>

@@ -11,10 +11,10 @@ sap.ui.define([
       //   this.getView().setModel(oModel);
 
       // use JSON instead
-      var oModel = new JSONModel("./model/customers.json");
-      oModel.setDefaultBindingMode("OneWay");        
-      this.getView().setModel(oModel, "Customers");
-      // sap.ui.getCore().setModel(oModel, "Customers");
+      // var oModel = new JSONModel("./model/customers.json");
+      // oModel.setDefaultBindingMode("OneWay");        
+      // this.getView().setModel(oModel, "Customers");
+      // // sap.ui.getCore().setModel(oModel, "Customers");
     },
     onNavigate: function (evt) {
       switch (evt.getParameter("key")) {

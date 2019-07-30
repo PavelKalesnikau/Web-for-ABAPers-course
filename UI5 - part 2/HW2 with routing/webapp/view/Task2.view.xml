@@ -8,7 +8,12 @@
 		<content>
 			<Toolbar>
 				<ToolbarSpacer/>
-				<Button id="bnBack1" class="nav_back" icon="sap-icon://navigation-left-arrow" text="Back" type="Emphasized" press="onNavBack"/>
+				<Button id="bnBack1" 
+				class="nav_back" 
+				icon="sap-icon://navigation-left-arrow" 
+				text="{i18n>btnBackText}" 
+				type="Emphasized" 
+				press="onNavBack"/>
 				<ToolbarSpacer/>
 			</Toolbar>
 
