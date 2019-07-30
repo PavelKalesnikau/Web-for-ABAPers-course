@@ -1,0 +1,30 @@
+<mvc:View    
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"     
+    xmlns:c="sap.ui.core">
+    <Table  items="{ path:'Customers>/Customers'}">
+        <columns>
+            <Column width="11rem">
+                <Label text="First Name" />
+            </Column>
+            <Column width="11rem">
+                <Label text="Last Name" />
+            </Column>
+            <Column width="7rem" hAlign="End">
+                <Label text="Age" />
+            </Column>
+            <Column width="7rem">
+                <Label text="Phone" />
+            </Column>
+        </columns>
+        <items>
+         <ColumnListItem>
+             <cells>
+                 <Text id="tFirstName" text="{firstName}" />
+                 <Text id="tLastName" text="{lastName}" />
+                 <Text id="tAge" text="{age}" />                        
+             </cells>
+         </ColumnListItem>
+     </items>
+    </Table>
+</mvc:View>

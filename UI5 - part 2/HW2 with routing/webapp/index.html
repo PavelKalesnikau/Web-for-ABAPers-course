@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>UI5 course - HW2</title>
+	<script 
+		id="sap-ui-bootstrap" 
+		type="text/javascript" 		
+		src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_belize" 
+		data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt"		
+		data-sap-ui-resourceroots='{"UI5_course": "./"}' 		
+		data-sap-ui-compatVersion="edge"		
+		data-sap-ui-async="true"
+		>
+		</script>
+			<script>
+				sap.ui.getCore().attachInit(function () {
+					new sap.m.Shell({
+						app: new sap.ui.core.ComponentContainer({
+							name: "UI5_course"
+						})
+					}).placeAt("content");
+				});
+			</script>
+		
+</head>
+
+<body class="sapUiBody" id="content"></body>
+
+</html>

@@ -1,0 +1,46 @@
+{
+    "Customers": [
+        {
+            "firstName": "John",
+            "lastName": "Smith",
+            "age": 25,
+            "address": {
+                "streetAddress": "21 2nd Street",
+                "city": "New York",
+                "state": "NY",
+                "postalCode": "10021"
+            },
+            "phoneNumber": [
+                {
+                    "type": "home",
+                    "number": "212 555-1234"
+                },
+                {
+                    "type": "fax",
+                    "number": "646 555-4567"
+                }
+            ]
+        },
+        {
+            "firstName": "Lory",
+            "lastName": "Bard",
+            "age": 35,
+            "address": {
+                "streetAddress": "13 3nd Street",
+                "city": "New York",
+                "state": "NY",
+                "postalCode": "10031"
+            },
+            "phoneNumber": [
+                {
+                    "type": "home",
+                    "number": "211 777-1234"
+                },
+                {
+                    "type": "fax",
+                    "number": "646 523-4345"
+                }
+            ]
+        }
+    ]
+}

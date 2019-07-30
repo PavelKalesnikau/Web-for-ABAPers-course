@@ -1,0 +1,58 @@
+<mvc:View controllerName="UI5_course.controller.App" 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:form="sap.ui.layout.form" 
+	xmlns="sap.m" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="pgTask2" title="SAPUI5 - HW2 - Task2: Inputs">
+		<content>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button id="bnBack1" class="nav_back" icon="sap-icon://navigation-left-arrow" text="Back" type="Emphasized" press="onNavBack"/>
+				<ToolbarSpacer/>
+			</Toolbar>
+
+			<CheckBox xmlns="sap.m" text="Check Box" selected="false" id="box0"/>
+
+			<ActionSelect id="select0"/>
+
+			<ComboBox xmlns="sap.m" id="box1">
+				<items>
+					<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item1"/>
+					<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item2"/>
+				</items>
+			</ComboBox>
+
+			<TextArea xmlns="sap.m" value="Lorem ipsum dolor" rows="4" id="area0"/>
+
+			<Input xmlns="sap.m" value="Value" id="input1"/>
+
+			<FeedInput placeholder="Опубликуйте здесь что-нибудь" buttonTooltip="Отправить" id="input0"/>
+
+			<RadioButtonGroup xmlns="sap.m" columns="1" id="group0">
+				<buttons>
+					<RadioButton text="Option One" id="button1"/>
+					<RadioButton text="Option Two" id="button2"/>
+				</buttons>
+			</RadioButtonGroup>
+
+			<DatePicker xmlns="sap.m" id="picker0"/>
+
+			<TimePicker xmlns="sap.m" id="picker1"/>
+
+			<SearchField xmlns="sap.m" placeholder="Search for ..." id="field0"/>
+
+			<Select xmlns="sap.m" id="select1">
+				<items>
+					<core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item55"/>
+					<core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item56"/>
+				</items>
+			</Select>
+
+			<Slider xmlns="sap.m" value="30" id="slider0"/>
+
+			<Switch xmlns="sap.m" id="switch0"/>
+
+		</content>
+	</Page>
+</mvc:View>

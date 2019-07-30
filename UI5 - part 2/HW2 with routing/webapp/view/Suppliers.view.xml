@@ -1,0 +1,44 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+    <Table id="IDTable" items="{
+                            path:'/Customers'
+                        }">
+        <columns>
+            <Column>
+                <Text text="CustomerID" />
+            </Column>
+            <Column>
+                <Text text="CompanyName" />
+            </Column>
+            <Column>
+                <Text text="ContactTitle" />
+            </Column>
+            <Column>
+                <Text text="Address" />
+            </Column>
+            <Column>
+                <Text text="City" />
+            </Column>
+            <Column>
+                <Text text="Country" />
+            </Column>
+             <Column>
+                <Text text="Phone" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem type="Navigation" press="navToMoreInfo">
+                <cells>
+                    <Text text="{CustomerID}" />
+                    <Text text="{CompanyName}" />
+                    <Text text="{ContactTitle}" />
+                    <Text text="{Address}" />
+                    <Text text="{City}" />
+                    <Text text="{Country}" />
+                    <Text text="{Phone}" />                    
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+
+</mvc:View>

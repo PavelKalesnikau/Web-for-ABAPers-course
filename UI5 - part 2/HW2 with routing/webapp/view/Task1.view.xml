@@ -1,0 +1,28 @@
+<mvc:View controllerName="UI5_course.controller.App" 
+    xmlns:core="sap.ui.core" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:form="sap.ui.layout.form" 
+    xmlns="sap.m" 
+    xmlns:html="http://www.w3.org/1999/xhtml">
+    <Page id="pgTask1" title="SAPUI5 - HW2 - Task1: Form">
+        <content>
+            <form:SimpleForm editable="true" layout="ResponsiveGridLayout" id="form0">
+                <form:content>
+                    <core:Title text="Books" id="title0"/>
+                    <Label text="Author" id="lblAuthor"/>
+                    <Input width="50%" id="inAuthor" value="{/Author}" />
+                    <Label text="Name" id="lblName"/>
+                    <Input width="50%" id="inName" value="{/Name}"/>
+                    <Label text="Review" id="lblReview"/>
+                    <Input width="100%" id="inReview" value="{/Review}"/>
+                    <Toolbar>
+                        <ToolbarSpacer/>
+                        <Button id="bnBack1" class="nav_back" icon="sap-icon://navigation-left-arrow" text="Back" type="Emphasized" press="onNavBack"/>
+                        <Button icon="sap-icon://action" text="Send" type="Default" press="onSend"/>
+                        <ToolbarSpacer/>
+                    </Toolbar>
+                </form:content>
+            </form:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

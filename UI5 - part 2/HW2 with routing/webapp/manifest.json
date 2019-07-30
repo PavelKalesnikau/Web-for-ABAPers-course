@@ -1,0 +1,115 @@
+{
+    "_version": "1.12.0",
+    "sap.app": {
+        "id": "UI5_course",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "dataSources": {
+            "northwind": {
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0"
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_bluecrystal"
+        ]
+    },
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "UI5_course.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "app"
+        },
+        "dependencies": {
+            "minUI5Version": "1.30",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {}
+            }
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "UI5_course.i18n.i18n"
+                },
+            "dbs": {
+                    "preload": "true",
+                    "dataSource": "northwind"
+                }
+            }
+        },
+        "resources": {},
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "UI5_course.view",
+                "controlId": "app",
+                "controlAggregation": "pages",
+                "bypassed": {
+                    "target": "notFound"
+                },
+                "async": true
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "overview",
+                    "target": "overview"
+                },
+                {
+                    "pattern": "task1",
+                    "name": "task1",
+                    "target": "task1"
+                },
+                {
+                    "pattern": "task2",
+                    "name": "task2",
+                    "target": "task2"
+                },
+                {
+                    "pattern": "task3",
+                    "name": "task3",
+                    "target": "task3"
+                }
+            ],
+            "targets": {
+                "overview": {
+                    "viewName": "Overview"
+                },
+                "task1": {
+                    "viewName": "Task1"
+                },
+                "task2": {
+                    "viewName": "Task2"
+                },
+                "task3": {
+                    "viewName": "Task3"
+                },
+                "notFound": {
+                    "viewId": "notFound",
+                    "viewName": "NotFound",
+                    "transition": "show"
+                }
+            }
+        }
+    }
+}

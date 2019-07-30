@@ -1,0 +1,15 @@
+<mvc:View controllerName="UI5_course.controller.App" 	 
+	xmlns:mvc="sap.ui.core.mvc" 	
+	xmlns="sap.m">
+	<Page id="pgOverview" title = "Select the task">
+		<content>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button id="bnTask1" class = "nav_to" icon="sap-icon://navigation-right-arrow" text="Task1" type="Emphasized" press="onNavTo"/>
+				<Button id="bnTask2" class = "nav_to" icon="sap-icon://navigation-right-arrow" text="Task2" type="Emphasized" press="onNavTo"/>
+				<Button id="bnTask3" class = "nav_to" icon="sap-icon://navigation-right-arrow" text="Task3" type="Emphasized" press="onNavTo"/>
+				<ToolbarSpacer/>
+			</Toolbar>
+		</content>
+	</Page>
+</mvc:View>
