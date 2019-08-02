@@ -4,7 +4,7 @@
     xmlns:form="sap.ui.layout.form" 
     xmlns="sap.m" 
     xmlns:html="http://www.w3.org/1999/xhtml">
-    <Page id="pgTask1" title="{i18n>pgTask1Title}">
+    <Page id="pgTask1" title="{i18n>Task1.title}">
         <content>
             <form:SimpleForm editable="true" layout="ResponsiveGridLayout" id="form0">
                 <form:content>

@@ -3,7 +3,7 @@
     xmlns:mvc="sap.ui.core.mvc" 
     xmlns="sap.m" 
     xmlns:ux3="sap.ui.ux3" id="shell">
-    <ux3:Shell id="idShellView" appTitle="{i18n>viewTask3Title}" worksetItemSelected="onNavigate" showTools="true">
+    <ux3:Shell id="idShellView" appTitle="{i18n>Task3.title}" worksetItemSelected="onNavigate" showTools="true">
         <ux3:headerItems>
             <Button id="bnBack3" 
                     class="nav_back" 
