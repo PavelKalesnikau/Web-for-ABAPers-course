@@ -1,11 +1,11 @@
 class Worker{
     constructor(name, surname, department){
         this._name = name;
-        this._surname = surname; 
+        this._surname = surname;         
         this._department = department; // declare it starting with _, because setter doens't work without this symbol 
     }
     toString(){
-        return `Меня зовут ${this._name} ${this._surname}`;
+        return `Меня зовут ${this._name} ${this._surname}. Я - рабочий.`;
     }
     
     set department(newDepartment){       
