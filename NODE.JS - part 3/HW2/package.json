@@ -5,15 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "babel-node": "babel-node",
+    "build": "babel worker.js --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PavelKalesnikau/Web-for-ABAPers-course/tree/master/NODE.JS%20-%20part%203/HW1"
+    "url": "https://github.com/PavelKalesnikau/Web-for-ABAPers-course/tree/master/NODE.JS%20-%20part%203/HW2"
   },
   "keywords": [
-    "HW1",
-    "Node.js"
+    "HW2",
+    "Node.js",
+    "Grunt",
+    "Babel"
   ],
   "author": "Pavel Kalesnikau",
   "license": "ISC",
@@ -23,6 +27,11 @@
     "@babel/node": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
     "grunt": "^1.0.4",
-    "grunt-contrib-concat": "^1.0.1"
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^4.0.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }

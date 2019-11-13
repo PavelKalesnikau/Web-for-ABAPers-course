@@ -1,4 +1,4 @@
-hconst User = require("./user");
+const User = require("./user");
 const Worker = require("./worker");
 
 var Vasya = new User("Вася", 25, "vasya555@gmail.com");
@@ -9,6 +9,22 @@ Kolya.increaseAge();
 
 var worker = new Worker("Иван", "Иванов", "отдел автоматизации");
 console.log(worker.toString());
+const express = require("express");
+ 
+const app = express();
+app.get("/", function(request, response){
+     
+    response.send("<h1>Главная страница</h1>");
+});
+app.get("/about", function(request, response){
+     
+    response.send("<h1>О сайте</h1>");
+});
+app.get("/contact", function(request, response){
+     
+    response.send("<h1>Контакты</h1>");
+});
+app.listen(3000);
 // user class in ES5
 function User (name, age, email){
     this.name = name;
