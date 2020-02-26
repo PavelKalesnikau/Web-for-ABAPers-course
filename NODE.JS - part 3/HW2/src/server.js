@@ -1,5 +1,6 @@
 const express = require("express");
 const Worker = require("./worker");
+// const DB = require("./database");
 const bodyParser = require("body-parser"); // парсер для html-форм
 const path = require('path');
 
@@ -11,13 +12,13 @@ const urlencodedParser = bodyParser.urlencoded({extended: false});
 //app.use(express.static(__dirname + "/public"));  
 app.use(express.static("../public"));  
 
-var workers = [ new Worker(1, "Иван", "Иванов", "отдел кадров"),
-                new Worker(2, "Константин", "Константинов", "отдел юридических лиц"),
-                new Worker(3, "Сергей", "Сергеев", "отдел физических лиц") ];
+// Use mongodb instead 
+ var workers = [ new Worker(1, "Иван", "Иванов", "отдел кадров"),
+                 new Worker(2, "Константин", "Константинов", "отдел юридических лиц"),
+                 new Worker(3, "Сергей", "Сергеев", "отдел физических лиц") ];
 
 app.get("/workers", function(request, response){
-    let responseText = "<ul>"; 
-
+    let responseText = "<ul>";     
     workers.forEach(element => {
         responseText += "<li>" + element + "</li>";
     });
@@ -27,15 +28,17 @@ app.get("/workers", function(request, response){
 });
 
 app.get("/worker", function(request, response){
-    "url example ../worker?id=1"
+    // url example ../worker?id=1
     let id = request.query.id; 
     responseText = "<p>" + workers[id-1] + "</p>";
     response.send(responseText);
 });
 app.get("/new_worker", urlencodedParser, function (request, response) {
+// app.get("/new_worker", function (request, response) {
     response.sendFile(path.join(__dirname, "../public/newWorker.html"));
 });
 app.post("/new_worker", urlencodedParser, function (request, response) {
+// app.post("/new_worker", function (request, response) {
     if(!request.body) return response.sendStatus(400);
     // console.log(request.body);    
     
